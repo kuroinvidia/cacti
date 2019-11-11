@@ -18,5 +18,6 @@ systemctl restart apache2
 
 mysql -u root -p mysql
 CREATE USER 'admin'@'localhost' IDENTIFIED BY 'admin';
+GRANT ALL PRIVILEGES ON * . * TO 'admin'@'localhost';
 flush privileges;
 exit
