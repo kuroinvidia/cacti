@@ -8,5 +8,6 @@ systemctl restart mariadb
 apt install apache2 php php-mysql php-snmp -y
 apt install cacti snmpd -y
 echo -e "\n \n admin \n admin \n"
-mysql -u root -p -D cacti -e "update user_auth set password=md5('admin') where $
+mysql -u root -p -D cacti -e "update user_auth set password=md5('admin') where username='admin';"
+
 
