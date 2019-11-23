@@ -17,7 +17,7 @@ sed -i "s+192.168.55.3+$ip+g" /etc/snmp/snmpd.conf
 
 echo 'Your Rocommunity!!'
 read -p 'Rocommunity : ' rocommunity
-sed -i "s+alice+$rocommunity" /etc/snmp/snmpd.conf
+sed -i "s+alice+$rocommunity+g" /etc/snmp/snmpd.conf
 
 #admin is password you can changes it
 echo -e "\n \n admin \n admin \n"
